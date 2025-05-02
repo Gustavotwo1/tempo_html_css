@@ -3,13 +3,14 @@ firstact = false;
 function atualizarCards() {
 
     if (firstact == false) {
-
+        //card recebe "div" 
+                      //fazer uma pesquisa no documento pelo id
         const cards = document.getElementById('weather-info');
         cards.classList.add('weather-info-mostrar');
         firstact = true;
     }
     else {
-
+                    
         const card = document.querySelector('.weather-info');
         
         card.style.opacity = 0;
